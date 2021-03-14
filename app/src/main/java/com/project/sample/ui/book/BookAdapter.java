@@ -10,8 +10,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.dylogicapps.muslimquranpro.R;
-import com.dylogicapps.muslimquranpro.data.model.Book;
+import com.project.sample.R;
+import com.project.sample.data.model.Book;
 
 import java.util.List;
 

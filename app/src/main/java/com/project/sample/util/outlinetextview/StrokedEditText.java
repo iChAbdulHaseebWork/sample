@@ -14,7 +14,7 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.widget.EditText;
 
-import com.dylogicapps.muslimquranpro.R;
+import com.project.sample.R;
 
 
 /**

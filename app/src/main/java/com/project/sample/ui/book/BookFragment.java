@@ -9,16 +9,16 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.dylogicapps.muslimquranpro.MainActivity;
-import com.dylogicapps.muslimquranpro.R;
-import com.dylogicapps.muslimquranpro.ui.bookmark.HadithBookmarkActivity;
-import com.dylogicapps.muslimquranpro.ui.hadithcontent.HadithContentActivity;
-import com.dylogicapps.muslimquranpro.ui.hadithnote.HadithAllNoteActivity;
-import com.dylogicapps.muslimquranpro.ui.kitab.KitabActivity;
-import com.dylogicapps.muslimquranpro.viewmodel.BookViewModel;
-import com.dylogicapps.muslimquranpro.viewmodel.HadithContentViewModel;
-import com.dylogicapps.muslimquranpro.viewmodel.HadithNoteViewModel;
-import com.dylogicapps.muslimquranpro.viewmodel.KitabViewModel;
+import com.project.sample.MainActivity;
+import com.project.sample.R;
+import com.project.sample.ui.bookmark.HadithBookmarkActivity;
+import com.project.sample.ui.hadithcontent.HadithContentActivity;
+import com.project.sample.ui.hadithnote.HadithAllNoteActivity;
+import com.project.sample.ui.kitab.KitabActivity;
+import com.project.sample.viewmodel.BookViewModel;
+import com.project.sample.viewmodel.HadithContentViewModel;
+import com.project.sample.viewmodel.HadithNoteViewModel;
+import com.project.sample.viewmodel.KitabViewModel;
 import com.google.android.material.appbar.AppBarLayout;
 
 import androidx.annotation.NonNull;
@@ -68,7 +68,7 @@ public class BookFragment extends Fragment implements BookAdapter.Listener, AppB
 
         ButterKnife.bind(this,root);
         configureRecyclerView();
-        ((com.dylogicapps.muslimquranpro.MainActivity)getActivity()).setToolbarTitle("Hadith Collection");
+        ((com.project.sample.MainActivity)getActivity()).setToolbarTitle("Hadith Collection");
         bookViewModel.getAllBooks().observe(getActivity(), books -> {
             //update RecyclerView
             adapter.updateData(books);
@@ -133,13 +133,13 @@ public class BookFragment extends Fragment implements BookAdapter.Listener, AppB
     private void handleToolbarTitleVisibility(float percentage) {
         if (percentage >= PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR) {
             if(!mIsTheTitleVisible) {
-                ((com.dylogicapps.muslimquranpro.MainActivity)getActivity()).hideToolbarTitle(false);
+                ((com.project.sample.MainActivity)getActivity()).hideToolbarTitle(false);
                 mIsTheTitleVisible = true;
             }
             // (1.0 / 0.55) = 1.81
             // (1.0 / 0.6) = 1.66
             // (1.0 / 0.65) = 1.54
-            ((com.dylogicapps.muslimquranpro.MainActivity)getActivity()).setToolbarTitleAlpha((1.66f*percentage)-0.66f);
+            ((com.project.sample.MainActivity)getActivity()).setToolbarTitleAlpha((1.66f*percentage)-0.66f);
         } else {
             // (1.0 / 0.45) = 2.22
             // (1.0 / 0.4) = 2.5
@@ -147,7 +147,7 @@ public class BookFragment extends Fragment implements BookAdapter.Listener, AppB
             collapsingTitle.setAlpha(1-(percentage*2.5f));
             tvBookCount.setAlpha(1-(percentage*(2.5f*2.f)));
             if (mIsTheTitleVisible) {
-                ((com.dylogicapps.muslimquranpro.MainActivity)getActivity()).hideToolbarTitle(true);
+                ((com.project.sample.MainActivity)getActivity()).hideToolbarTitle(true);
                 mIsTheTitleVisible = false;
             }
         }

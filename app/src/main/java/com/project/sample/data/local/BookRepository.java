@@ -3,11 +3,11 @@ package com.project.sample.data.local;
 
 import android.app.Application;
 
-import com.dylogicapps.muslimquranpro.data.db.BookDao;
-import com.dylogicapps.muslimquranpro.data.db.MuslimProDatabase;
-import com.dylogicapps.muslimquranpro.data.model.Book;
-import com.dylogicapps.muslimquranpro.data.model.BookInfo;
-import com.dylogicapps.muslimquranpro.data.model.BookNameTuple;
+import com.project.sample.data.db.BookDao;
+import com.project.sample.data.db.sampleDatabase;
+import com.project.sample.data.model.Book;
+import com.project.sample.data.model.BookInfo;
+import com.project.sample.data.model.BookNameTuple;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class BookRepository {
     private final BookDao bookDao;
     private final LiveData<List<Book>> allBooks;
     public BookRepository(Application application) {
-        MuslimProDatabase db = MuslimProDatabase.getDatabase(application);
+        sampleDatabase db = sampleDatabase.getDatabase(application);
         bookDao = db.bookDao();
         allBooks = bookDao.getAllBooks();
     }

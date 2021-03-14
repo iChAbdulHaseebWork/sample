@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.dylogicapps.muslimquranpro.R;
-import com.dylogicapps.muslimquranpro.data.model.BookAbout;
+import com.project.sample.R;
+import com.project.sample.data.model.BookAbout;
 
 import java.util.List;
 

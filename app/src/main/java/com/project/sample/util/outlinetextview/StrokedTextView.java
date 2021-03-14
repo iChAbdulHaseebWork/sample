@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.TextView;
 
-import com.dylogicapps.muslimquranpro.R;
+import com.project.sample.R;
 
 
 /**

@@ -1,8 +1,8 @@
 package com.project.sample.data.db;
 
-import com.dylogicapps.muslimquranpro.data.model.Book;
-import com.dylogicapps.muslimquranpro.data.model.BookInfo;
-import com.dylogicapps.muslimquranpro.data.model.BookNameTuple;
+import com.project.sample.data.model.Book;
+import com.project.sample.data.model.BookInfo;
+import com.project.sample.data.model.BookNameTuple;
 
 import java.util.List;
 

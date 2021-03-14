@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.dylogicapps.muslimquranpro.ui.greetingSticker.GreetingStickersActivity;
-import com.dylogicapps.muslimquranpro.ui.hadithseacrh.HadithSearchActivity;
-import com.dylogicapps.muslimquranpro.ui.hadithsetting.HadithSettingActivity;
-import com.dylogicapps.muslimquranpro.ui.qiblaDirection.QiblaDirectionActivity;
+import com.project.sample.ui.greetingSticker.GreetingStickersActivity;
+import com.project.sample.ui.hadithseacrh.HadithSearchActivity;
+import com.project.sample.ui.hadithsetting.HadithSettingActivity;
+import com.project.sample.ui.qiblaDirection.QiblaDirectionActivity;
 import com.google.android.material.navigation.NavigationView;
 
 import java.io.File;

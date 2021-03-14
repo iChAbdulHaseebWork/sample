@@ -1,8 +1,8 @@
 package com.project.sample.data.remote;
 
-import com.dylogicapps.muslimquranpro.data.model.TextToSpeech;
-import com.dylogicapps.muslimquranpro.data.model.TextToSpeechResponse;
-import com.dylogicapps.muslimquranpro.data.model.TranslationResponse;
+import com.project.sample.data.model.TextToSpeech;
+import com.project.sample.data.model.TextToSpeechResponse;
+import com.project.sample.data.model.TranslationResponse;
 
 import java.util.List;
 

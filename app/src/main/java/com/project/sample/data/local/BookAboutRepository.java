@@ -3,9 +3,9 @@ package com.project.sample.data.local;
 
 import android.app.Application;
 
-import com.dylogicapps.muslimquranpro.data.db.BookAboutDao;
-import com.dylogicapps.muslimquranpro.data.db.MuslimProDatabase;
-import com.dylogicapps.muslimquranpro.data.model.BookAbout;
+import com.project.sample.data.db.BookAboutDao;
+import com.project.sample.data.db.sampleDatabase;
+import com.project.sample.data.model.BookAbout;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class BookAboutRepository {
     private final BookAboutDao bookAboutDao;
 
     public BookAboutRepository(Application application) {
-        MuslimProDatabase db = MuslimProDatabase.getDatabase(application);
+        sampleDatabase db = sampleDatabase.getDatabase(application);
         bookAboutDao = db.bookAboutDao();
     }
 

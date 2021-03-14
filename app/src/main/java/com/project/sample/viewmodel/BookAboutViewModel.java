@@ -2,8 +2,8 @@ package com.project.sample.viewmodel;
 
 import android.app.Application;
 
-import com.dylogicapps.muslimquranpro.data.local.BookAboutRepository;
-import com.dylogicapps.muslimquranpro.data.model.BookAbout;
+import com.project.sample.data.local.BookAboutRepository;
+import com.project.sample.data.model.BookAbout;
 
 import java.util.List;
 

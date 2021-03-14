@@ -27,8 +27,8 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.TextView;
 
-import com.dylogicapps.muslimquranpro.R;
-import com.dylogicapps.muslimquranpro.util.DimensionConverter;
+import com.project.sample.R;
+import com.project.sample.util.DimensionConverter;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;

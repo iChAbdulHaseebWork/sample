@@ -1,6 +1,6 @@
 package com.project.sample.data.db;
 
-import com.dylogicapps.muslimquranpro.data.model.BookAbout;
+import com.project.sample.data.model.BookAbout;
 
 import java.util.List;
 

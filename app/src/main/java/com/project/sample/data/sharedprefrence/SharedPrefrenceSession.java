@@ -3,9 +3,9 @@ package com.project.sample.data.sharedprefrence;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.dylogicapps.muslimquranpro.R;
-import com.dylogicapps.muslimquranpro.data.model.HadithSettingsModel;
-import com.dylogicapps.muslimquranpro.data.model.TranslationLanguage;
+import com.project.sample.R;
+import com.project.sample.data.model.HadithSettingsModel;
+import com.project.sample.data.model.TranslationLanguage;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

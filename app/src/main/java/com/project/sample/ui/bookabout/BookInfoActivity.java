@@ -5,9 +5,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.dylogicapps.muslimquranpro.R;
-import com.dylogicapps.muslimquranpro.viewmodel.BookAboutViewModel;
-import com.dylogicapps.muslimquranpro.viewmodel.BookViewModel;
+import com.project.sample.R;
+import com.project.sample.viewmodel.BookAboutViewModel;
+import com.project.sample.viewmodel.BookViewModel;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
